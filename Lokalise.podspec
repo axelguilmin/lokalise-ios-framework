@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = "9.0"
 
-  s.source = { :http => "https://github.com/lokalise/lokalise-ios-framework/releases/download/#{s.version.to_s}/Lokalise.xcframework.#{s.version.to_s}.zip" }
+  s.source = { :git => "https://github.com/axelguilmin/lokalise-ios-framework.git", :tag => s.version.to_s }
 
   s.ios.vendored_frameworks = "Lokalise.xcframework"
 
