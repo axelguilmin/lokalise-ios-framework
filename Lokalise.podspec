@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
 
   s.source = { :http => "https://github.com/lokalise/lokalise-ios-framework/releases/download/#{s.version.to_s}/Lokalise.xcframework.#{s.version.to_s}.zip" }
 
-  s.ios.vendored_frameworks = "Lokalise.framework"
+  s.ios.vendored_frameworks = "Lokalise.xcframework"
 
   s.frameworks   = 'Foundation'
   s.libraries    = 'c++', 'z'
