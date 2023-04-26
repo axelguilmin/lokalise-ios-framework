@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = "9.0"
 
-  s.source = {:git => "https://github.com/lokalise/lokalise-ios-framework.git", :tag => s.version}
+  s.source = { :http => "https://github.com/lokalise/lokalise-ios-framework/releases/download/#{s.version.to_s}/Lokalise.xcframework.#{s.version.to_s}.zip" }
 
   s.ios.vendored_frameworks = "Lokalise.framework"
 
@@ -28,5 +28,5 @@ Pod::Spec.new do |s|
   s.libraries    = 'c++', 'z'
 
   s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(inherited)" }
-
+  
 end
